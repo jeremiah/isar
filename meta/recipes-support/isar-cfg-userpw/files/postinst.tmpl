@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+USER_ENTRIES='${CFG_USER_PW} '
+
+while true; do
+    USER_ENTRY="${USER_ENTRIES%% *}" # First element of list
+    USER_ENTRIES="${USER_ENTRIES#${USER_ENTRY} }" # Rest of list
+
+    if [ -z "${USER_ENTRY}" ]; then
+        break
+    fi
+
+    printf '%s' "${USER_ENTRY}" | chpasswd -e
+done

@@ -328,6 +328,7 @@ Some other variables include:
  - `DISTRO_APT_PREMIRRORS` - The preferred mirror (append it to the default URI in the format `ftp.debian.org my.preferred.mirror`. This variable is optional.
  - `CFG_ROOT_PW` - The encrypted root password to be set. To encrypt password use `mkpasswd`. You find `mkpasswd` in the `whois` package of Debian. If the variable is empty, root login is passwordless.
  - `CFG_ROOT_LOCKED` - If set to `1` the root account will be locked.
+ - `CFG_USER_PW` - A space separated list of user names and encrypted passwords separated by a colon. (e.g. `username1:encryptedpw1 username2:encryptedpw2`)
 
 ---
 
