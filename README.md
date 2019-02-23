@@ -1,4 +1,4 @@
-# isar - Integration System for Automated Root filesystem generation *
+# isar - Integration System for Automated Root filesystem generation
 
 Isar is a set of scripts for building software packages and repeatable
 generation of Debian-based root filesystems with customizations.
